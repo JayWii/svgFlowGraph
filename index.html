@@ -1,0 +1,52 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>svgFlowGraph</title>
+	<link rel="stylesheet" href="./src/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./src/css/main.css">
+</head>
+
+<body onload="main()">
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">简单的SVG流程图</a>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<aside class="col-md-2">
+			<!-- <svg width="100" height="100" id="rectangle"></svg>
+			<svg width="100" height="100" id="rounded"></svg>
+			<svg width="100" height="100" id="ellipse"></svg>
+			<svg width="100" height="100" id="rhombus"></svg>
+			<svg width="100" height="100" id="edge"></svg>
+			<svg width="100" height="100" id="text"></svg> -->
+			<img src="./src/img/Rectangle.png" alt="">
+			<img src="./src/img/Rounded.png" alt="">
+			<img src="./src/img/Oval.png" alt="">
+			<img src="./src/img/Polygon.png" alt="">
+			<img src="./src/img/Polygon1.png" alt="" hidden="hidden">
+			<img src="./src/img/text.png" alt="" style="width: 60px">
+		</aside>
+		<div class="graphWrap col-md-9">
+			<div id="graphContainer"></div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript">
+		mxBasePath = './src';
+	</script>
+	<script type="text/javascript" src="./src/js/snap.svg-min.js"></script>
+	<script type="text/javascript" src="./src/js/mxClient.js"></script>
+	<script type="text/javascript" src="./src/js/style.js"></script>
+	<script type="text/javascript" src="./src/js/main.js"></script>
+</body>
+</html>
